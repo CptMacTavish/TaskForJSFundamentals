@@ -82,14 +82,13 @@
 ///////////////task5 Done///////////////////
 
 
-// let  array = [5, "Limit", 12, "a", "4308", "3", 99, 2, 147, [2, 4, 3, "33", 2 , "a", "text"], "strong", "broun", 627, "TF"];
+// let  array = [5, "Limit", 12, "a", "4308", "3", 99, 2, 147, [2, 4, 3, 141, "33", 2 , "a", "text"], "strong", "broun", 627, "TF"];
 
 
 
 // function divisionByType(arr) {
 //     let nums = [];
-//     let strings = [];
-//     let arrays = [];    
+//     let strings = [];   
 
 //     for (let i = 0; i < arr.length; i++) {
 //         if (typeof arr[i] === 'number') {
@@ -99,11 +98,18 @@
 //             strings.push(arr[i]);
 //         }
 //         else if(Array.isArray(arr[i])) {
-//             arrays.push(arr[i]);
+//             for(let j = 0; j < arr[i].length; j++) {
+//                 if (typeof arr[i][j] === 'number'){
+//                     nums.push(arr[i][j]);
+//                 }
+//                 else if(typeof arr[i][j] === 'string') {
+//                     strings.push(arr[i][j]);
+//                 }
+//             }
 //         }
 //     }
 
-//     return {nums, strings, arrays};
+//     return {nums, strings};
 
 // }
 
