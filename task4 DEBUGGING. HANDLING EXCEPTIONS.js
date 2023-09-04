@@ -113,7 +113,7 @@
 //     }
 // }
 
-// let arr = [7, -12, 44, 22];
+// let arr = [7, -12, 'sdaf', 44, 22, 1241];
 
 // const showUser = (id) => {       
 //         if(id < 0) {
@@ -129,7 +129,14 @@
 
 // const showUsers = (ids) => {
 //     let correctArr = [];
-//     ids.forEach(element => {correctArr.push(showUser(element))});
+//     ids.forEach(element => {    
+//         try {
+//             let guy = showUser(element);
+//             correctArr.push(guy);
+//         } catch (error) {
+//             console.log(error.message);
+//         }
+//         });
 //     console.log(correctArr);
 // }
 
