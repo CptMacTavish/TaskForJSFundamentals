@@ -25,15 +25,15 @@
 
 //////////////////////task5 Done///////////////////////////////////////////
 
-function checkLogin(login) {
-    let regex = /^[A-Za-z][A-Za-z0-9.]{1,9}$/;
+// function checkLogin(login) {
+//     let regex = /^[A-Za-z][A-Za-z0-9.]{1,9}$/;
 
-    const isValid = regex.test(login);
-    const numbers = login.match(/[-+]?[0-9]*\.?[0-9]+/g) || [];
+//     const isValid = regex.test(login);
+//     const numbers = login.match(/[-+]?[0-9]*\.?[0-9]+/g) || [];
 
-  return {isValid, numbers};
-}
+//   return {isValid, numbers};
+// }
 
-checkLogin('userLogin');
+// checkLogin('userLogin');
 
 /////////////////////////////////////////////////////////////////////////
